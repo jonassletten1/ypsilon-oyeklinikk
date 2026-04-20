@@ -1,7 +1,6 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import AboutSection from "@/components/sections/AboutSection";
-import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = { title: "Om oss" };
@@ -18,7 +17,6 @@ export default function OmOssPage() {
           </div>
         </section>
         <AboutSection />
-        <TestimonialsSection />
       </main>
       <Footer />
     </>

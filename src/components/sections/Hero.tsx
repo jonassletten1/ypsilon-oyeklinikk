@@ -26,7 +26,7 @@ export default function Hero() {
           Undersøkelse, behandling og kirurgi av høy kvalitet. Alle våre leger er godkjente spesialister i øyesykdommer.
         </p>
         <div style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap" }}>
-          <Link href="/bestill-time" style={{
+          <Link href="/kontakt" style={{
             background: "#4A6B8A", color: "#fff", borderRadius: 4,
             fontSize: 12, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase",
             padding: "14px 36px", textDecoration: "none", transition: "background 200ms",
@@ -34,7 +34,7 @@ export default function Hero() {
             onMouseEnter={e => (e.currentTarget.style.background = "#5A7B9A")}
             onMouseLeave={e => (e.currentTarget.style.background = "#4A6B8A")}
           >
-            Bestill time
+            Kontakt oss
           </Link>
           <Link href="/tjenester" style={{
             background: "transparent", color: "rgba(255,255,255,0.85)",

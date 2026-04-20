@@ -42,7 +42,7 @@ export default function Header() {
         })}
       </nav>
 
-      <Link href="/bestill-time" style={{
+      <Link href="/kontakt" style={{
         background: "#4A6B8A", color: "#fff", borderRadius: 4,
         fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase",
         padding: "10px 22px", textDecoration: "none", transition: "background 200ms",
@@ -50,7 +50,7 @@ export default function Header() {
         onMouseEnter={e => (e.currentTarget.style.background = "#3A5570")}
         onMouseLeave={e => (e.currentTarget.style.background = "#4A6B8A")}
       >
-        Bestill time
+        Kontakt oss
       </Link>
     </header>
   );
