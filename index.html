@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<title>Ypsilon Øyeklinikk — Preview</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: system-ui, sans-serif; background: #2D2F4A; color: #fff; display: flex; align-items: center; justify-content: center; height: 100vh; flex-direction: column; gap: 24px; }
+  h1 { font-size: 13px; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(255,255,255,0.5); }
+  a { background: #4A6B8A; color: #fff; text-decoration: none; padding: 14px 36px; border-radius: 4px; font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; transition: background 200ms; }
+  a:hover { background: #5A7B9A; }
+  p { font-size: 12px; color: rgba(255,255,255,0.35); letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+  <h1>Ypsilon Øyeklinikk</h1>
+  <a href="http://localhost:3000" onclick="setTimeout(()=>location.href='http://localhost:3000',200)">Åpne nettside</a>
+  <p>Sørg for at dev-serveren kjører (npm run dev)</p>
+  <script>
+    // Auto-redirect if server is up
+    fetch('http://localhost:3000').then(() => location.href = 'http://localhost:3000').catch(() => {});
+  </script>
+</body>
+</html>

@@ -24,12 +24,12 @@ export default function PriserPage() {
           <div style={{ background: "#fff", borderRadius: 4, overflow: "hidden", boxShadow: "0 1px 3px rgba(45,47,74,0.06)" }}>
             {prices.map(([name, price], i) => (
               <div key={name} style={{
-                padding: "16px 24px",
+                padding: "20px 28px",
                 borderBottom: i < prices.length - 1 ? "1px solid #E8ECF0" : "none",
                 display: "flex", justifyContent: "space-between", alignItems: "center",
               }}>
-                <span style={{ fontSize: 14, fontWeight: 300, color: "#2D2F4A" }}>{name}</span>
-                <span style={{ fontSize: 14, fontWeight: 400, color: "#4A6B8A", letterSpacing: "0.04em" }}>{price}</span>
+                <span style={{ fontSize: 16, fontWeight: 300, color: "#2D2F4A" }}>{name}</span>
+                <span style={{ fontSize: 16, fontWeight: 500, color: "#4A6B8A", letterSpacing: "0.04em" }}>{price}</span>
               </div>
             ))}
           </div>
