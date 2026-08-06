@@ -4,11 +4,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import YpsilonLogo from "@/components/layout/YpsilonLogo";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Home() {
-  const [showMap, setShowMap] = useState(false);
-
   return (
     <>
       <Header />
@@ -121,53 +118,17 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Høyre: kart — lastes fra Google først etter samtykke (personvern) */}
+              {/* Høyre: kart — OpenStreetMap (vises med en gang, ingen sporingscookies) */}
               <div style={{ borderRadius: 6, overflow: "hidden", border: "1px solid #E2E8EF" }}>
-                {showMap ? (
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2002.8!2d10.174102!3d59.749566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4646909a6b6b6b6b%3A0x0!2sHotvetalleen+15A%2C+Drammen!5e0!3m2!1sno!2sno!4v1600000000000!5m2!1sno!2sno"
-                    width="100%"
-                    height="460"
-                    style={{ border: "none", display: "block" }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                    title="Kart til Ypsilon Øyeklinikk"
-                  />
-                ) : (
-                  <div style={{
-                    height: 460, background: "#EEF1F4",
-                    display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
-                    textAlign: "center", padding: "32px 28px", gap: 16,
-                  }}>
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#40577C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    <div style={{ fontSize: 15, fontWeight: 500, color: "#1A1D2E" }}>Hotvetalleen 15A, Drammen</div>
-                    <p style={{ fontSize: 13, fontWeight: 300, color: "#5A6472", lineHeight: 1.6, maxWidth: 320 }}>
-                      Kartet lastes fra Google Maps. Når du viser det, kan Google sette informasjonskapsler på din enhet.
-                    </p>
-                    <button
-                      onClick={() => setShowMap(true)}
-                      style={{
-                        background: "#40577C", color: "#fff", border: "none", borderRadius: 5,
-                        padding: "11px 24px", fontSize: 14, fontWeight: 500, letterSpacing: "0.04em",
-                        cursor: "pointer", fontFamily: "var(--font-sans)",
-                      }}
-                    >
-                      Vis kart
-                    </button>
-                    <a
-                      href="https://maps.google.com/?q=Hotvetalleen+15A,+Drammen"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      style={{ fontSize: 13, color: "#40577C", textDecoration: "none", borderBottom: "1px solid #40577C", paddingBottom: 1 }}
-                    >
-                      Åpne i Google Maps →
-                    </a>
-                  </div>
-                )}
+                <iframe
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=10.1601%2C59.7456%2C10.1881%2C59.7536&layer=mapnik&marker=59.749566%2C10.174102"
+                  width="100%"
+                  height="460"
+                  style={{ border: "none", display: "block" }}
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  title="Kart til Ypsilon Øyeklinikk"
+                />
                 <div style={{ padding: "16px 20px", background: "#FAFBFC", borderTop: "1px solid #E2E8EF", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ fontSize: 14, fontWeight: 400, color: "#1A1D2E" }}>Hotvetalleen 15A, Drammen</div>
                   <a
@@ -176,7 +137,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     style={{ fontSize: 13, color: "#40577C", textDecoration: "none", borderBottom: "1px solid #40577C", paddingBottom: 1 }}
                   >
-                    Åpne i Maps →
+                    Åpne i Google Maps →
                   </a>
                 </div>
               </div>

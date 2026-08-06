@@ -6,7 +6,7 @@ const isDev = process.env.NODE_ENV !== "production";
 // - 'unsafe-inline' for scripts/styles is required because Next.js emits a small
 //   inline bootstrap script and the site uses React inline `style` attributes.
 // - 'unsafe-eval' is only added in development (needed for Fast Refresh / HMR).
-// - The Google Maps embed is allowed via frame-src; everything else is same-origin.
+// - The OpenStreetMap embed is allowed via frame-src; everything else is same-origin.
 const csp = [
   "default-src 'self'",
   "base-uri 'self'",
@@ -16,7 +16,7 @@ const csp = [
   "img-src 'self' data: blob: https:",
   "font-src 'self'",
   "connect-src 'self'",
-  "frame-src https://www.google.com https://maps.google.com",
+  "frame-src https://www.openstreetmap.org",
   "frame-ancestors 'none'",
   "form-action 'self' mailto:",
   "upgrade-insecure-requests",

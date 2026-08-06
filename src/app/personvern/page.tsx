@@ -68,7 +68,7 @@ export default function PersonvernPage() {
                 heading: "Nettsiden og eksterne tjenester",
                 paragraphs: [
                   "Nettsiden setter ingen informasjonskapsler for sporing eller analyse.",
-                  "På kontakt- og adressesiden tilbyr vi et kart fra Google Maps. Kartet lastes ikke automatisk — det vises først når du selv velger å laste det. Når du gjør det, kan Google sette informasjonskapsler og behandle opplysninger i henhold til Googles egen personvernerklæring.",
+                  "Adressekartet på forsiden vises via OpenStreetMap og setter ingen sporingsinformasjonskapsler. Dersom du velger å åpne Google Maps for veibeskrivelse, gjelder Googles egen personvernerklæring.",
                 ],
               },
               {
