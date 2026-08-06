@@ -3,6 +3,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import YpsilonLogo from "@/components/layout/YpsilonLogo";
+import MapView from "@/components/sections/MapView";
 import Link from "next/link";
 
 export default function Home() {
@@ -118,17 +119,9 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Høyre: kart — OpenStreetMap (vises med en gang, ingen sporingscookies) */}
+              {/* Høyre: kart — OpenStreetMap via Leaflet (vises med en gang, ingen sporingscookies, ryddig attribusjon) */}
               <div style={{ borderRadius: 6, overflow: "hidden", border: "1px solid #E2E8EF" }}>
-                <iframe
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=10.1601%2C59.7456%2C10.1881%2C59.7536&layer=mapnik&marker=59.749566%2C10.174102"
-                  width="100%"
-                  height="460"
-                  style={{ border: "none", display: "block" }}
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                  title="Kart til Ypsilon Øyeklinikk"
-                />
+                <MapView />
                 <div style={{ padding: "16px 20px", background: "#FAFBFC", borderTop: "1px solid #E2E8EF", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
                   <div style={{ fontSize: 14, fontWeight: 400, color: "#1A1D2E" }}>Hotvetalleen 15A, Drammen</div>
                   <a
