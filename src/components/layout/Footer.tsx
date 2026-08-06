@@ -3,71 +3,67 @@
 import Link from "next/link";
 import YpsilonLogo from "./YpsilonLogo";
 
-const cols = [
-  {
-    title: "TJENESTER",
-    links: [
-      { label: "Øyeundersøkelse", href: "/tjenester" },
-      { label: "Laseroperasjon", href: "/tjenester" },
-      { label: "Grå stær", href: "/tjenester" },
-      { label: "Tørre øyne", href: "/tjenester" },
-      { label: "Barneoftalmologi", href: "/tjenester" },
-    ],
-  },
-  {
-    title: "KLINIKKEN",
-    links: [
-      { label: "Om oss", href: "/om-oss" },
-      { label: "Priser", href: "/priser" },
-      { label: "Kontakt", href: "/kontakt" },
-    ],
-  },
-  {
-    title: "KONTAKT",
-    links: [
-      { label: "+47 22 00 00 00", href: "tel:+4722000000" },
-      { label: "post@ypsilonoyeklinikk.no", href: "mailto:post@ypsilonoyeklinikk.no" },
-      { label: "Storgata 1, Oslo", href: "/kontakt" },
-      { label: "Man–fre 08–16", href: "/kontakt" },
-    ],
-  },
-];
-
 export default function Footer() {
   return (
-    <footer style={{ background: "#2D2F4A", color: "#fff", padding: "56px 48px 32px" }}>
+    <footer style={{ background: "#40577C", color: "#fff", padding: "64px 48px 36px" }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1fr", gap: 40, marginBottom: 48 }}>
+        <div className="footer-grid">
+
+          {/* Brand */}
           <div>
-            <div style={{ marginBottom: 20 }}>
-              <YpsilonLogo light />
+            <div style={{ marginBottom: 22 }}>
+              <YpsilonLogo light large />
             </div>
-            <p style={{ fontSize: 13, fontWeight: 300, lineHeight: 1.7, color: "rgba(255,255,255,0.55)", maxWidth: 260 }}>
-              Privat øyeklinikk med spesialisthelsetjenester. Undersøkelse, behandling og kirurgi av høy kvalitet.
+            <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.85, color: "rgba(255,255,255,0.50)", maxWidth: 260 }}>
+              Ny og moderne øyeklinikk i Drammen. Offentlig avtale med Helse Sør-Øst. Åpnet 1. juni 2026.
             </p>
           </div>
-          {cols.map(col => (
-            <div key={col.title}>
-              <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: "0.16em", textTransform: "uppercase", color: "#7A9BB5", marginBottom: 16 }}>{col.title}</div>
-              <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 8 }}>
-                {col.links.map(link => (
-                  <li key={link.label}>
-                    <Link href={link.href} style={{ fontSize: 13, fontWeight: 300, color: "rgba(255,255,255,0.6)", textDecoration: "none", transition: "color 200ms" }}
-                      onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
-                      onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.6)")}
-                    >{link.label}</Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
-        <div style={{ borderTop: "1px solid rgba(255,255,255,0.1)", paddingTop: 24, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <div style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", letterSpacing: "0.04em" }}>© 2025 Ypsilon Øyeklinikk AS · Org.nr. 000 000 000</div>
-          <div style={{ display: "flex", gap: 20 }}>
-            <Link href="/personvern" style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Personvern</Link>
-            <Link href="/cookies" style={{ fontSize: 11, color: "rgba(255,255,255,0.35)", textDecoration: "none" }}>Cookies</Link>
+
+          {/* Sider */}
+          <div>
+            <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "#7A9BB5", marginBottom: 18 }}>SIDER</div>
+            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+              {[
+                { label: "Åpningstider", href: "/apningstider" },
+                { label: "Pasientinformasjon", href: "/pasientinformasjon" },
+                { label: "Priser", href: "/priser" },
+                { label: "Kontakt", href: "/kontakt" },
+              ].map(link => (
+                <li key={link.href}>
+                  <Link href={link.href} style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)", textDecoration: "none", transition: "color 200ms" }}
+                    onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                    onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
+                  >{link.label}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
+
+          {/* Kontakt */}
+          <div>
+            <div style={{ fontSize: 10, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "#7A9BB5", marginBottom: 18 }}>KONTAKT</div>
+            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 12 }}>
+              <li style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)", lineHeight: 1.6 }}>Hotvetalleen 15A<br />Drammen</li>
+              <li>
+                <a href="tel:+4733221212" style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)", textDecoration: "none", transition: "color 200ms" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
+                >33 22 12 12</a>
+              </li>
+              <li>
+                <a href="mailto:post@ypsilonoyeklinikk.no" style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)", textDecoration: "none", transition: "color 200ms" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#fff")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
+                >post@ypsilonoyeklinikk.no</a>
+              </li>
+              <li style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)" }}>Man–fre 08:00–16:00</li>
+            </ul>
+          </div>
+
+        </div>
+        <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: 28, display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <div style={{ fontSize: 13, color: "rgba(255,255,255,0.30)", letterSpacing: "0.03em" }}>© 2026 Ypsilon Øyeklinikk AS</div>
+          <Link href="/personvern" style={{ fontSize: 13, color: "rgba(255,255,255,0.30)", textDecoration: "none" }}>Personvern</Link>
         </div>
       </div>
     </footer>

@@ -1,33 +1,59 @@
+import Link from "next/link";
+
 export default function AboutSection() {
   return (
-    <section style={{ background: "#fff", padding: "96px 48px" }}>
-      <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 80, alignItems: "center" }}>
+    <section style={{ background: "#FAFBFC", padding: "104px 48px" }}>
+      <div style={{ maxWidth: 1200, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 88, alignItems: "start" }}>
         <div>
-          <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: "0.18em", textTransform: "uppercase", color: "#4A6B8A", marginBottom: 16 }}>OM OSS</div>
-          <h2 style={{ fontSize: 38, fontWeight: 300, letterSpacing: "0.08em", textTransform: "uppercase", color: "#2D2F4A", lineHeight: 1.2, marginBottom: 24 }}>
-            EN KLINIKK<br />DU KAN STOLE PÅ
+          <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.18em", textTransform: "uppercase", color: "#40577C", marginBottom: 18 }}>OM OSS</div>
+          <h2 style={{
+            fontFamily: "var(--font-heading)",
+            fontSize: 38,
+            fontWeight: 700,
+            color: "#1A1D2E",
+            lineHeight: 1.25,
+            marginBottom: 32,
+          }}>
+            En klinikk<br />du kan stole på
           </h2>
-          <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.8, color: "#5A6472", marginBottom: 20 }}>
-            Ypsilon Øyeklinikk ble etablert med ett mål: å gi pasienter tilgang til øyespesialisttjenester av høyeste kvalitet, uten unødvendig ventetid.
+          <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.85, color: "#4A5568", marginBottom: 20 }}>
+            Ypsilon Øyeklinikk er en ny og moderne øyeklinikk i Drammen som åpnet 1. juni 2026. Klinikken drives av avtalespesialistene <strong style={{ fontWeight: 600, color: "#1A1D2E" }}>Jarle Sletten</strong> og <strong style={{ fontWeight: 600, color: "#1A1D2E" }}>Gurpreet Singh Khangura</strong>.
           </p>
-          <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.8, color: "#5A6472" }}>
-            Alle våre leger er godkjente spesialister med bred erfaring fra både offentlig og privat sektor.
+          <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.85, color: "#4A5568", marginBottom: 20 }}>
+            Vi dekker alle områder av øyefaget. Klinikken har egen operasjonsstue og utfører også grå stær-operasjoner.
           </p>
+          <p style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.85, color: "#4A5568", marginBottom: 36 }}>
+            Vi har offentlig avtale med Helse Sør-Øst. For nye pasienter er det nødvendig med henvisning fra lege, optiker eller helsestasjon.
+          </p>
+          <Link href="/pasientinformasjon" style={{
+            display: "inline-flex", alignItems: "center", gap: 8,
+            color: "#40577C", fontSize: 14, fontWeight: 500,
+            letterSpacing: "0.06em", textDecoration: "none",
+            borderBottom: "1px solid #40577C", paddingBottom: 2,
+          }}>
+            Les mer om pasientinformasjon →
+          </Link>
         </div>
 
-        <div style={{
-          background: "linear-gradient(135deg, #F4F6F8 0%, #EAECF0 100%)",
-          borderRadius: 8, height: 380,
-          display: "flex", alignItems: "center", justifyContent: "center",
-          border: "1px solid #E8ECF0",
-        }}>
-          <div style={{ textAlign: "center" }}>
-            <svg width="64" height="44" viewBox="0 0 64 44" fill="none" style={{ opacity: 0.2 }}>
-              <path d="M2 22 C14 4, 50 4, 62 22 C50 40, 14 40, 2 22Z" stroke="#2D2F4A" strokeWidth="2" fill="none" />
-              <circle cx="32" cy="22" r="9" stroke="#2D2F4A" strokeWidth="2" fill="none" />
-            </svg>
-            <div style={{ fontSize: 12, color: "#6B7B86", letterSpacing: "0.08em", marginTop: 12, textTransform: "uppercase" }}>Bilde — Klinikkinteriør</div>
-          </div>
+        <div>
+          {[
+            { label: "Adresse", value: "Hotvetalleen 15A, Drammen" },
+            { label: "Offentlig avtale", value: "Helse Sør-Øst" },
+            { label: "Spesialitet", value: "Alle områder av øyefaget" },
+            { label: "Operasjonsstue", value: "Grå stær og andre inngrep" },
+          ].map((item, i) => (
+            <div key={item.label} style={{
+              display: "grid",
+              gridTemplateColumns: "1fr 1fr",
+              gap: 16,
+              padding: "22px 0",
+              borderTop: i === 0 ? "1px solid #E2E8EF" : "none",
+              borderBottom: "1px solid #E2E8EF",
+            }}>
+              <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.10em", textTransform: "uppercase", color: "#7A9BB5" }}>{item.label}</div>
+              <div style={{ fontSize: 16, fontWeight: 400, color: "#1A1D2E", lineHeight: 1.5 }}>{item.value}</div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
