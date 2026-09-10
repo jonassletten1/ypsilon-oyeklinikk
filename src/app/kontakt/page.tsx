@@ -81,7 +81,7 @@ export default function KontaktPage() {
                   { title: "Telefon", value: "33 22 12 12" },
                   { title: "E-post", value: "post@ypsilonoyeklinikk.no" },
                   { title: "Telefontid", value: "Mandag–fredag\n08:00–11:00 og 13:00–15:00" },
-                  { title: "Åpningstider", value: "Mandag–fredag\n08:00–16:00" },
+                  { title: "Åpningstider", value: "Mandag–fredag\n08:00–15:30" },
                 ].map((item, i) => (
                   <div key={item.title} style={{
                     padding: "18px 0",

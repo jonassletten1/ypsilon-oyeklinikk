@@ -41,11 +41,11 @@ export default function ApningstiderPage() {
               <div>
                 <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#40577C", marginBottom: 24 }}>Åpningstider</div>
                 {[
-                  ["Mandag", "08:00 – 16:00"],
-                  ["Tirsdag", "08:00 – 16:00"],
-                  ["Onsdag", "08:00 – 16:00"],
-                  ["Torsdag", "08:00 – 16:00"],
-                  ["Fredag", "08:00 – 16:00"],
+                  ["Mandag", "08:00 – 15:30"],
+                  ["Tirsdag", "08:00 – 15:30"],
+                  ["Onsdag", "08:00 – 15:30"],
+                  ["Torsdag", "08:00 – 15:30"],
+                  ["Fredag", "08:00 – 15:30"],
                   ["Lørdag – Søndag", "Stengt"],
                 ].map(([dag, tid], i) => (
                   <div key={dag} style={{

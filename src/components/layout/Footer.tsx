@@ -56,7 +56,7 @@ export default function Footer() {
                   onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.55)")}
                 >post@ypsilonoyeklinikk.no</a>
               </li>
-              <li style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)" }}>Man–fre 08:00–16:00</li>
+              <li style={{ fontSize: 15, fontWeight: 300, color: "rgba(255,255,255,0.55)" }}>Man–fre 08:00–15:30</li>
             </ul>
           </div>
 
