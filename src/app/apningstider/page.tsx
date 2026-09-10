@@ -64,11 +64,11 @@ export default function ApningstiderPage() {
               <div>
                 <div style={{ fontSize: 12, fontWeight: 600, letterSpacing: "0.14em", textTransform: "uppercase", color: "#40577C", marginBottom: 24 }}>Telefontid</div>
                 {[
-                  ["Mandag", "08:00–12:00 · 13:00–15:00"],
-                  ["Tirsdag", "08:00–12:00 · 13:00–15:00"],
-                  ["Onsdag", "08:00–12:00 · 13:00–15:00"],
-                  ["Torsdag", "08:00–12:00 · 13:00–15:00"],
-                  ["Fredag", "08:00–12:00 · 13:00–15:00"],
+                  ["Mandag", "08:00–11:00 · 13:00–15:00"],
+                  ["Tirsdag", "08:00–11:00 · 13:00–15:00"],
+                  ["Onsdag", "08:00–11:00 · 13:00–15:00"],
+                  ["Torsdag", "08:00–11:00 · 13:00–15:00"],
+                  ["Fredag", "08:00–11:00 · 13:00–15:00"],
                   ["Lørdag – Søndag", "Stengt"],
                 ].map(([dag, tid], i) => (
                   <div key={dag} style={{

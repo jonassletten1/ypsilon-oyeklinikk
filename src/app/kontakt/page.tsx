@@ -30,7 +30,7 @@ export default function KontaktPage() {
               Kontakt oss
             </h1>
             <p style={{ fontSize: 17, fontWeight: 300, color: "rgba(250,251,252,0.60)", lineHeight: 1.7, maxWidth: 480 }}>
-              Telefontid mandag–fredag <strong style={{ fontWeight: 500, color: "rgba(250,251,252,0.85)" }}>08:00–12:00 og 13:00–15:00</strong>.
+              Telefontid mandag–fredag <strong style={{ fontWeight: 500, color: "rgba(250,251,252,0.85)" }}>08:00–11:00 og 13:00–15:00</strong>.
             </p>
           </div>
         </section>
@@ -80,7 +80,7 @@ export default function KontaktPage() {
                   { title: "Adresse", value: "Hotvetalleen 15A, Drammen" },
                   { title: "Telefon", value: "33 22 12 12" },
                   { title: "E-post", value: "post@ypsilonoyeklinikk.no" },
-                  { title: "Telefontid", value: "Mandag–fredag\n08:00–12:00 og 13:00–15:00" },
+                  { title: "Telefontid", value: "Mandag–fredag\n08:00–11:00 og 13:00–15:00" },
                   { title: "Åpningstider", value: "Mandag–fredag\n08:00–16:00" },
                 ].map((item, i) => (
                   <div key={item.title} style={{

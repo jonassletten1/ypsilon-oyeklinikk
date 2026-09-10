@@ -67,7 +67,7 @@ export default function Home() {
                 { label: "Åpnet", value: "1. juni 2026" },
                 { label: "Åpningstider", value: "Mandag–fredag 08:00–16:00" },
                 { label: "Telefon", value: "33 22 12 12" },
-                { label: "Telefontid", value: "Mandag–fredag\n08:00–12:00 og 13:00–15:00" },
+                { label: "Telefontid", value: "Mandag–fredag\n08:00–11:00 og 13:00–15:00" },
                 { label: "E-post", value: "post@ypsilonoyeklinikk.no" },
                 { label: "Offentlig avtale", value: "Helse Sør-Øst" },
               ].map((item, i) => (
