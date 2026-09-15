@@ -15,7 +15,7 @@ export default function PriserPage() {
         <section className="page-band" style={{ background: "#40577C" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
-              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#7A9BB5" }}>
+              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#C3D2E0" }}>
                 PRISER
               </div>
               <YpsilonLogo light large />
@@ -49,7 +49,7 @@ export default function PriserPage() {
                 }}>
                   <div>
                     <div style={{ fontSize: 17, fontWeight: 400, color: "#1A1D2E", marginBottom: 4 }}>{row.label}</div>
-                    <div style={{ fontSize: 14, fontWeight: 300, color: "#7A9BB5" }}>{row.sublabel}</div>
+                    <div style={{ fontSize: 14, fontWeight: 300, color: "#4E6E89" }}>{row.sublabel}</div>
                   </div>
                   <div style={{ fontSize: 22, fontWeight: 500, color: "#1A1D2E", letterSpacing: "0.01em" }}>{row.price}</div>
                 </div>
@@ -84,7 +84,7 @@ export default function PriserPage() {
                   style={{ width: "100%", height: "auto", display: "block", border: "1px solid #E2E8EF", borderRadius: 4 }}
                 />
               </a>
-              <p style={{ fontSize: 14, fontWeight: 300, color: "#9AA3AD", lineHeight: 1.7, marginTop: 16 }}>
+              <p style={{ fontSize: 14, fontWeight: 300, color: "#6C7680", lineHeight: 1.7, marginTop: 16 }}>
                 Prisene er offentlige takster fastsatt av myndighetene. Frikort godtas ved konsultasjon.
               </p>
             </div>

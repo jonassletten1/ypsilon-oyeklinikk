@@ -32,9 +32,9 @@ export default function Hero() {
           <div style={{
             display: "inline-flex", alignItems: "center", gap: 10,
             fontSize: 12, fontWeight: 600, letterSpacing: "0.18em",
-            textTransform: "uppercase", color: "#7A9BB5", marginBottom: 28,
+            textTransform: "uppercase", color: "#C3D2E0", marginBottom: 28,
           }}>
-            <span style={{ display: "inline-block", width: 28, height: 1, background: "#7A9BB5" }} />
+            <span style={{ display: "inline-block", width: 28, height: 1, background: "#C3D2E0" }} />
             Øyeklinikk · Drammen · Åpnet 1. juni 2026
           </div>
 
