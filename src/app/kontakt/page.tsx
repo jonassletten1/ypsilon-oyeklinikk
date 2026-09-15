@@ -21,7 +21,7 @@ export default function KontaktPage() {
         <section className="page-band" style={{ background: "#40577C" }}>
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
-              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#C3D2E0" }}>
+              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#DCE6F0" }}>
                 KONTAKT
               </div>
               <YpsilonLogo light large />
@@ -29,7 +29,7 @@ export default function KontaktPage() {
             <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(32px, 3.5vw, 48px)", fontWeight: 700, color: "#FAFBFC", lineHeight: 1.15, letterSpacing: "-0.01em", marginBottom: 20 }}>
               Kontakt oss
             </h1>
-            <p style={{ fontSize: 17, fontWeight: 300, color: "rgba(250,251,252,0.75)", lineHeight: 1.7, maxWidth: 480 }}>
+            <p style={{ fontSize: 17, fontWeight: 300, color: "rgba(250,251,252,0.85)", lineHeight: 1.7, maxWidth: 480 }}>
               Telefontid mandag–fredag <strong style={{ fontWeight: 500, color: "rgba(250,251,252,0.85)" }}>08:00–11:00 og 13:00–15:00</strong>.
             </p>
           </div>
@@ -68,7 +68,7 @@ export default function KontaktPage() {
                 <a href="mailto:post@ypsilonoyeklinikk.no" style={{ display: "inline-block", background: "#40577C", color: "#fff", border: "none", borderRadius: 4, padding: "14px 28px", fontSize: 14, fontWeight: 500, cursor: "pointer", fontFamily: "var(--font-sans)", letterSpacing: "0.04em", textDecoration: "none" }}>
                   Send melding
                 </a>
-                <p style={{ fontSize: 13, fontWeight: 300, color: "#4E6E89", lineHeight: 1.6, marginTop: 14 }}>
+                <p style={{ fontSize: 13, fontWeight: 300, color: "#3D5F7D", lineHeight: 1.6, marginTop: 14 }}>
                   Skjemaet åpner din e-postklient og sender til post@ypsilonoyeklinikk.no. Ikke oppgi sensitiv informasjon på e-post.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function KontaktPage() {
                     borderBottom: "1px solid #E2E8EF",
                     display: "grid", gridTemplateColumns: "140px 1fr", gap: 16, alignItems: "start",
                   }}>
-                    <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", color: "#4E6E89" }}>{item.title}</div>
+                    <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.08em", textTransform: "uppercase", color: "#3D5F7D" }}>{item.title}</div>
                     <div style={{ fontSize: 15, fontWeight: 400, lineHeight: 1.65, color: "#1A1D2E", whiteSpace: "pre-line" }}>{item.value}</div>
                   </div>
                 ))}

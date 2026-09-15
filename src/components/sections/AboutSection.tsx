@@ -50,7 +50,7 @@ export default function AboutSection() {
               borderTop: i === 0 ? "1px solid #E2E8EF" : "none",
               borderBottom: "1px solid #E2E8EF",
             }}>
-              <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.10em", textTransform: "uppercase", color: "#4E6E89" }}>{item.label}</div>
+              <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.10em", textTransform: "uppercase", color: "#3D5F7D" }}>{item.label}</div>
               <div style={{ fontSize: 16, fontWeight: 400, color: "#1A1D2E", lineHeight: 1.5 }}>{item.value}</div>
             </div>
           ))}

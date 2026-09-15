@@ -15,7 +15,7 @@ export default function ApningstiderPage() {
         <section className="page-band" style={{ background: "#40577C" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
-              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#C3D2E0" }}>
+              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#DCE6F0" }}>
                 INFORMASJON
               </div>
               <YpsilonLogo light large />
@@ -54,8 +54,8 @@ export default function ApningstiderPage() {
                     borderTop: i === 0 ? "1px solid #E2E8EF" : "none",
                     borderBottom: "1px solid #E2E8EF",
                   }}>
-                    <span style={{ fontSize: 16, fontWeight: 300, color: dag === "Lørdag – Søndag" ? "#6C7680" : "#1A1D2E" }}>{dag}</span>
-                    <span style={{ fontSize: 16, fontWeight: dag === "Lørdag – Søndag" ? 300 : 500, color: dag === "Lørdag – Søndag" ? "#6C7680" : "#1A1D2E" }}>{tid}</span>
+                    <span style={{ fontSize: 16, fontWeight: 300, color: dag === "Lørdag – Søndag" ? "#3D5F7D" : "#1A1D2E" }}>{dag}</span>
+                    <span style={{ fontSize: 16, fontWeight: dag === "Lørdag – Søndag" ? 300 : 500, color: dag === "Lørdag – Søndag" ? "#3D5F7D" : "#1A1D2E" }}>{tid}</span>
                   </div>
                 ))}
               </div>
@@ -77,11 +77,11 @@ export default function ApningstiderPage() {
                     borderTop: i === 0 ? "1px solid #E2E8EF" : "none",
                     borderBottom: "1px solid #E2E8EF",
                   }}>
-                    <span style={{ fontSize: 16, fontWeight: 300, color: dag === "Lørdag – Søndag" ? "#6C7680" : "#1A1D2E" }}>{dag}</span>
-                    <span style={{ fontSize: 16, fontWeight: dag === "Lørdag – Søndag" ? 300 : 500, color: dag === "Lørdag – Søndag" ? "#6C7680" : "#1A1D2E" }}>{tid}</span>
+                    <span style={{ fontSize: 16, fontWeight: 300, color: dag === "Lørdag – Søndag" ? "#3D5F7D" : "#1A1D2E" }}>{dag}</span>
+                    <span style={{ fontSize: 16, fontWeight: dag === "Lørdag – Søndag" ? 300 : 500, color: dag === "Lørdag – Søndag" ? "#3D5F7D" : "#1A1D2E" }}>{tid}</span>
                   </div>
                 ))}
-                <p style={{ fontSize: 14, fontWeight: 300, color: "#4E6E89", marginTop: 16, lineHeight: 1.65 }}>
+                <p style={{ fontSize: 14, fontWeight: 300, color: "#3D5F7D", marginTop: 16, lineHeight: 1.65 }}>
                   Vi ber om at henvendelser skjer innenfor telefontiden.
                 </p>
               </div>

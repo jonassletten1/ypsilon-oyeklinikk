@@ -16,7 +16,7 @@ export default function PasientinformasjonPage() {
         <section className="page-band" style={{ background: "#40577C" }}>
           <div style={{ maxWidth: 900, margin: "0 auto" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 20 }}>
-              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#C3D2E0" }}>
+              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#DCE6F0" }}>
                 INFORMASJON
               </div>
               <YpsilonLogo light large />

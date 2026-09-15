@@ -16,13 +16,13 @@ export default function Home() {
         <section className="page-band" style={{ background: "#40577C" }}>
           <div style={{ maxWidth: 1200, margin: "0 auto", display: "flex", justifyContent: "space-between", alignItems: "center", gap: 48 }}>
             <div>
-              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#C3D2E0", marginBottom: 20 }}>
+              <div style={{ fontSize: 11, fontWeight: 600, letterSpacing: "0.20em", textTransform: "uppercase", color: "#DCE6F0", marginBottom: 20 }}>
                 Avtalespesialister i øyesykdommer · Hotvetalleen 15A, Drammen
               </div>
               <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(36px, 4vw, 54px)", fontWeight: 700, color: "#FAFBFC", lineHeight: 1.15, marginBottom: 20, letterSpacing: "-0.01em" }}>
                 Ypsilon Øyeklinikk
               </h1>
-              <p style={{ fontSize: 17, fontWeight: 300, color: "rgba(250,251,252,0.75)", lineHeight: 1.7, maxWidth: 520 }}>
+              <p style={{ fontSize: 17, fontWeight: 300, color: "rgba(250,251,252,0.85)", lineHeight: 1.7, maxWidth: 520 }}>
                 Offentlig avtale med Helse Sør-Øst — åpnet 1. juni 2026
               </p>
             </div>
@@ -77,7 +77,7 @@ export default function Home() {
                   borderTop: i === 0 ? "1px solid #E2E8EF" : "none",
                   borderBottom: "1px solid #E2E8EF",
                 }}>
-                  <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.10em", textTransform: "uppercase", color: "#4E6E89" }}>{item.label}</div>
+                  <div style={{ fontSize: 12, fontWeight: 500, letterSpacing: "0.10em", textTransform: "uppercase", color: "#3D5F7D" }}>{item.label}</div>
                   <div style={{ fontSize: 15, fontWeight: 400, color: "#1A1D2E", lineHeight: 1.65, whiteSpace: "pre-line" }}>{item.value}</div>
                 </div>
               ))}
@@ -117,7 +117,7 @@ export default function Home() {
                       borderBottom: i === arr.length - 1 ? "1px solid #E2E8EF" : "none",
                     }}>
                       <span style={{ fontSize: 15, fontWeight: 400, color: "#1A1D2E" }}>{h.stop}</span>
-                      <span style={{ fontSize: 14, fontWeight: 300, color: "#4E6E89", whiteSpace: "nowrap" }}>{h.walk}</span>
+                      <span style={{ fontSize: 14, fontWeight: 300, color: "#3D5F7D", whiteSpace: "nowrap" }}>{h.walk}</span>
                     </div>
                   ))}
 
@@ -135,7 +135,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: "#4E6E89", marginTop: 20 }}>
+                  <p style={{ fontSize: 15, fontWeight: 300, lineHeight: 1.8, color: "#3D5F7D", marginTop: 20 }}>
                     Fra Ørengata er det om lag 350 meter å gå til klinikken. Oppdaterte avgangstider finnes i reiseplanleggeren.
                   </p>
 

@@ -37,9 +37,9 @@ export default function BestillTimePage() {
               <div style={{
                 width: 24, height: 24, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center",
                 background: step >= i + 1 ? "#40577C" : "#E8ECF0",
-                color: step >= i + 1 ? "#fff" : "#5C6D78", fontSize: 10, fontWeight: 500,
+                color: step >= i + 1 ? "#fff" : "#3D5F7D", fontSize: 10, fontWeight: 500,
               }}>{i + 1}</div>
-              <span style={{ fontSize: 11, letterSpacing: "0.08em", textTransform: "uppercase", color: step === i + 1 ? "#2D2F4A" : "#5C6D78" }}>{s}</span>
+              <span style={{ fontSize: 11, letterSpacing: "0.08em", textTransform: "uppercase", color: step === i + 1 ? "#2D2F4A" : "#3D5F7D" }}>{s}</span>
               {i < 2 && <div style={{ width: 32, height: 1, background: "#E8ECF0" }} />}
             </div>
           ))}
@@ -85,7 +85,7 @@ export default function BestillTimePage() {
               </div>
               {form.date && (
                 <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "#5C6D78", marginBottom: 10 }}>Ledige tider</div>
+                  <div style={{ fontSize: 11, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "#3D5F7D", marginBottom: 10 }}>Ledige tider</div>
                   <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                     {times.map(t => (
                       <div key={t} onClick={() => setForm(f => ({ ...f, time: t }))} style={{
